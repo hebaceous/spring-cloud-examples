@@ -5,5 +5,5 @@ spring:
     config:
       server:
         git:
-          uri: file://C:/Users/Hebaceous/IdeaProjects/cloud
-          search-paths: cloud-config-repertory
+          uri: http://192.168.60.250:81/ylshu/cloud.git
+          search-paths: cloud-config-repository
