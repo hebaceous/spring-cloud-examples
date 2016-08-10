@@ -1,4 +1,9 @@
+management:
+  context-path: /m
+
 spring:
+  application:
+    name: web
   cloud:
     config:
       uri: http://localhost:8888
