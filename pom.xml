@@ -46,6 +46,7 @@
     <modules>
         <module>cloud-config</module>
         <module>cloud-web</module>
+        <module>cloud-eureka</module>
     </modules>
 
 </project>

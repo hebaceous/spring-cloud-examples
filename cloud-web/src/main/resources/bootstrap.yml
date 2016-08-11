@@ -1,6 +1,13 @@
 spring:
+  application:
+    name: web
+  profiles:
+    active: dev
   cloud:
     config:
       uri: http://localhost:8888
-      name: web
-      profile: dev
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
