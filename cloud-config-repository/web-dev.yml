@@ -1,4 +1,2 @@
 server:
-  port: 8080
-
-message: some message
+  port: 7777
