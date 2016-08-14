@@ -45,9 +45,8 @@
 
     <modules>
         <module>cloud-config</module>
-        <module>cloud-web</module>
         <module>cloud-eureka</module>
-        <module>cloud-hystrix</module>
+        <module>cloud-web</module>
     </modules>
 
 </project>
