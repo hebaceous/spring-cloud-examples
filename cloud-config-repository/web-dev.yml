@@ -1,6 +1,9 @@
 server:
   port: 7777
 
+management:
+  context-path: /m
+
 eureka:
   client:
     serviceUrl:
