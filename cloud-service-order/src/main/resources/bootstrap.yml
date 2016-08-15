@@ -1,6 +1,6 @@
 spring:
   application:
-    name: web
+    name: order
   profiles:
     active: dev
   cloud:

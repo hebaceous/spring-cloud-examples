@@ -1,0 +1,13 @@
+server:
+  port: 8002
+
+management:
+  context-path: /m
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+service:
+  user: USER
