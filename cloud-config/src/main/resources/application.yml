@@ -1,6 +1,10 @@
 server:
   port: 8888
 spring:
+  rabbitmq:
+    host: 192.168.60.224
+    username: user
+    password: user
   cloud:
     config:
       server:
@@ -8,3 +12,6 @@ spring:
 #          uri: http://192.168.60.250:81/ylshu/cloud.git
           uri: file:C:\Users\Hebaceous\IdeaProjects\cloud
           search-paths: cloud-config-repository
+    bus:
+      trace:
+        enabled: true
