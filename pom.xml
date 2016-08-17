@@ -17,6 +17,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <spring-cloud.version>Brixton.SR4</spring-cloud.version>
+        <docker-maven-plugin.version>0.4.11</docker-maven-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -24,7 +26,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Brixton.SR4</version>
+                <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -38,6 +40,15 @@
 
     <build>
         <defaultGoal>package</defaultGoal>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.spotify</groupId>
+                    <artifactId>docker-maven-plugin</artifactId>
+                    <version>${docker-maven-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
