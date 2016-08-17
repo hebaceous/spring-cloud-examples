@@ -1,6 +1,6 @@
 spring:
   application:
-    name: user
+    name: zuul
   profiles:
     active: dev
   cloud:

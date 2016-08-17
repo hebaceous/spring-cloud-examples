@@ -52,8 +52,9 @@
         <module>cloud-config</module>
         <module>cloud-eureka</module>
         <module>cloud-domain</module>
-        <module>cloud-service-user</module>
-        <module>cloud-service-order</module>
+        <module>cloud-service-users</module>
+        <module>cloud-service-orders</module>
+        <module>cloud-zuul</module>
     </modules>
 
 </project>

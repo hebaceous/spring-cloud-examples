@@ -1,9 +1,6 @@
 server:
   port: 8002
 
-management:
-  context-path: /m
-
 eureka:
   client:
     serviceUrl:
@@ -16,4 +13,4 @@ spring:
     password: user
 
 service:
-  user: USER
+  users: USERS

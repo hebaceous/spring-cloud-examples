@@ -1,9 +1,6 @@
 server:
   port: 8001
 
-management:
-  context-path: /m
-
 eureka:
   client:
     serviceUrl:

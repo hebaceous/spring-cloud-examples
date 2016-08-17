@@ -2,6 +2,8 @@ package me.hebaceous.cloud.user;
 
 import me.hebaceous.cloud.domain.User;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,7 +16,8 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/")
+@RefreshScope
 public class UserController implements InitializingBean {
 
     // mock
@@ -39,4 +42,12 @@ public class UserController implements InitializingBean {
         return userMap.get(id);
     }
 
+
+    @Value("${message}")
+    String message;
+
+    @RequestMapping(value = "message", method = RequestMethod.GET)
+    String message() {
+        return message;
+    }
 }
