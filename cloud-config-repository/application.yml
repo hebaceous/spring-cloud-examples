@@ -11,3 +11,4 @@ spring:
 
 service:
   users: USERS
+  orders: ORDERS
