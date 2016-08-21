@@ -4,9 +4,9 @@ import me.hebaceous.cloud.domain.User;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -29,7 +29,7 @@ public class UserController implements InitializingBean {
         userMap.put(7L, new User().setId(7L).setName("lele"));
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @GetMapping
     List<User> all() {
         return userMap.entrySet()
                 .stream()
@@ -37,7 +37,7 @@ public class UserController implements InitializingBean {
                 .collect(Collectors.toList());
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @GetMapping("/{id}")
     User user(@PathVariable Long id) {
         return userMap.get(id);
     }
@@ -46,7 +46,7 @@ public class UserController implements InitializingBean {
     @Value("${message}")
     String message;
 
-    @RequestMapping(value = "message", method = RequestMethod.GET)
+    @GetMapping("message")
     String message() {
         return message;
     }
