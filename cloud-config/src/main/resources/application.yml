@@ -9,8 +9,8 @@ spring:
     config:
       server:
         git:
-#          uri: http://192.168.60.250:81/ylshu/cloud.git
-          uri: file:C:\Users\Hebaceous\IdeaProjects\cloud
+          uri: http://192.168.60.250:81/ylshu/cloud.git
+#          uri: file:C:\Users\Hebaceous\IdeaProjects\cloud
           search-paths: cloud-config-repository
     bus:
       trace:
