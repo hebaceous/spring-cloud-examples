@@ -15,7 +15,7 @@
 
         <dependency>
             <groupId>me.hebaceous</groupId>
-            <artifactId>cloud-domain</artifactId>
+            <artifactId>cloud-service-api</artifactId>
         </dependency>
 
         <dependency>

@@ -33,7 +33,7 @@
             </dependency>
             <dependency>
                 <groupId>me.hebaceous</groupId>
-                <artifactId>cloud-domain</artifactId>
+                <artifactId>cloud-service-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -78,7 +78,7 @@
     <modules>
         <module>cloud-config</module>
         <module>cloud-eureka</module>
-        <module>cloud-domain</module>
+        <module>cloud-service-api</module>
         <module>cloud-service-users</module>
         <module>cloud-service-orders</module>
         <module>cloud-zuul</module>

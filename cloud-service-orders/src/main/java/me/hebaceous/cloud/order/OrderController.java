@@ -1,6 +1,6 @@
 package me.hebaceous.cloud.order;
 
-import me.hebaceous.cloud.domain.Order;
+import me.hebaceous.cloud.api.domain.Order;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

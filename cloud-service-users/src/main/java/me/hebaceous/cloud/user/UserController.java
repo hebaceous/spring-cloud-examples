@@ -1,6 +1,6 @@
 package me.hebaceous.cloud.user;
 
-import me.hebaceous.cloud.domain.User;
+import me.hebaceous.cloud.api.domain.User;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;

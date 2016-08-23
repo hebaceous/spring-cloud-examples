@@ -1,9 +1,6 @@
-package me.hebaceous.cloud.domain;
+package me.hebaceous.cloud.api.domain;
 
-import java.io.Serializable;
-
-public class User implements Serializable {
-    private static final long serialVersionUID = -5770684485591401959L;
+public class User {
     private Long id;
     private String name;
 

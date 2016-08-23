@@ -1,10 +1,8 @@
-package me.hebaceous.cloud.domain;
+package me.hebaceous.cloud.api.domain;
 
-import java.io.Serializable;
 import java.util.Date;
 
-public class Order implements Serializable {
-    private static final long serialVersionUID = -2224568430533528507L;
+public class Order {
     private Long id;
     private Date date;
     private Long userId;
