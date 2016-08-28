@@ -3,5 +3,5 @@ server:
 
 zuul:
   routes:
-    cloud-service-user: /user/**
-    cloud-service-order: /order/**
+    cloud-service-user: /users/**
+    cloud-service-order: /orders/**
