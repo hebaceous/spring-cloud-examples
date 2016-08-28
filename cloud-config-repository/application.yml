@@ -10,5 +10,5 @@ spring:
     password: user
 
 service:
-  users: USERS
-  orders: ORDERS
+  user: CLOUD-SERVICE-USER
+  order: CLOUD-SERVICE-ORDER

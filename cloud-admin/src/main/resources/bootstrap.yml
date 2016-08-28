@@ -1,8 +1,6 @@
 spring:
   application:
-    name: admin
-  profiles:
-    active: dev
+    name: cloud-admin
   cloud:
     config:
       uri: http://localhost:8888

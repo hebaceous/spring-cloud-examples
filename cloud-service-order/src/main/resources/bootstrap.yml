@@ -1,8 +1,6 @@
 spring:
   application:
-    name: orders
-  profiles:
-    active: dev
+    name: cloud-service-order
   cloud:
     config:
       uri: http://localhost:8888

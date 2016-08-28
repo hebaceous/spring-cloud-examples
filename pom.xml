@@ -79,8 +79,8 @@
         <module>cloud-config</module>
         <module>cloud-eureka</module>
         <module>cloud-service-api</module>
-        <module>cloud-service-users</module>
-        <module>cloud-service-orders</module>
+        <module>cloud-service-user</module>
+        <module>cloud-service-order</module>
         <module>cloud-zuul</module>
         <module>cloud-admin</module>
     </modules>

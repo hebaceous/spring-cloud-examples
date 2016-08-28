@@ -1,7 +1,0 @@
-server:
-  port: 8000
-
-zuul:
-  routes:
-    users: /users/**
-    orders: /orders/**
