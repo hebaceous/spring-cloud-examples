@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@FeignClient("${service.user}")
+@FeignClient(name = "${service.user}", path = "/users")
 public interface UserClient {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)

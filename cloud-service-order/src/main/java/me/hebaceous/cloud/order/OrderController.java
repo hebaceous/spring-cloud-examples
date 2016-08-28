@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/orders")
 public class OrderController implements InitializingBean {
 
     // mock
@@ -36,7 +36,7 @@ public class OrderController implements InitializingBean {
     }
 
     @GetMapping("/{id}")
-    Order user(@PathVariable Long id) {
+    Order order(@PathVariable Long id) {
         return orderMap.get(id);
     }
 
