@@ -1,8 +1,12 @@
 package me.hebaceous.cloud.api.domain;
 
+import org.hibernate.validator.constraints.NotBlank;
+
+import javax.validation.constraints.NotNull;
+
 public class User {
-    private Long id;
-    private String name;
+    @NotNull private Long id;
+    @NotBlank private String name;
 
     public Long getId() {
         return id;

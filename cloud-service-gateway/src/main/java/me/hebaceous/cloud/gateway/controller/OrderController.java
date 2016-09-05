@@ -1,9 +1,9 @@
 package me.hebaceous.cloud.gateway.controller;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import me.hebaceous.cloud.api.domain.Order;
 import me.hebaceous.cloud.api.domain.User;
 import me.hebaceous.cloud.gateway.client.OrderClient;
-import me.hebaceous.cloud.gateway.client.UserClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,33 +14,29 @@ import java.util.Collections;
 import java.util.List;
 
 @RestController
-@RequestMapping("${path.user}")
-public class UserController {
-
-    @Autowired
-    private UserClient userClient;
+@RequestMapping("${path.order}")
+public class OrderController {
 
     @Autowired
     private OrderClient orderClient;
 
     @GetMapping
     @HystrixCommand(fallbackMethod = "allFallback")
-    List<User> all() {
-        return userClient.all();
+    List<Order> all() {
+        return orderClient.all();
     }
 
-    private List<User> allFallback() {
+    private List<Order> allFallback() {
         return Collections.emptyList();
     }
 
-    @GetMapping("/{userId}")
-    @HystrixCommand(fallbackMethod = "userFallback")
-    User user(@PathVariable Long userId) {
-        return userClient.user(userId);
+    @GetMapping("/{orderId}")
+    @HystrixCommand(fallbackMethod = "orderFallback")
+    Order order(@PathVariable Long orderId) {
+        return orderClient.order(orderId);
     }
 
-    private User userFallback() {
-        return new User();
+    private Order orderFallback() {
+        return new Order();
     }
-
 }

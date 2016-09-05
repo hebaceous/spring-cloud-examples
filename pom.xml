@@ -20,6 +20,7 @@
         <spring-cloud.version>Brixton.SR5</spring-cloud.version>
         <docker-maven-plugin.version>0.4.11</docker-maven-plugin.version>
         <spring-boot-admin.version>1.4.1</spring-boot-admin.version>
+        <springfox.version>2.5.0</springfox.version>
     </properties>
 
     <dependencyManagement>
@@ -47,9 +48,19 @@
                 <version>${spring-boot-admin.version}</version>
             </dependency>
             <dependency>
-                <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-starter-client</artifactId>
-                <version>${spring-boot-admin.version}</version>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-bean-validators</artifactId>
+                <version>${springfox.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
