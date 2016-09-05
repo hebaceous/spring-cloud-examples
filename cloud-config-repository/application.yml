@@ -12,3 +12,7 @@ spring:
 service:
   user: CLOUD-SERVICE-USER
   order: CLOUD-SERVICE-ORDER
+
+path:
+  user: /users
+  order: /orders

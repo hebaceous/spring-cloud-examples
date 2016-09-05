@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@FeignClient(name = "${service.order}", path = "/orders")
+@FeignClient(name = "${service.order}", path = "${path.order}")
 public interface OrderClient {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)

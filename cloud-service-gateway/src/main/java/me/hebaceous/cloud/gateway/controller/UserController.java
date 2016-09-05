@@ -14,7 +14,7 @@ import java.util.Collections;
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("${path.user}")
 public class UserController {
 
     @Autowired

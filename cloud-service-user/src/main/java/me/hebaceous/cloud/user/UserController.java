@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("${path.user}")
 @RefreshScope
 public class UserController implements InitializingBean {
 

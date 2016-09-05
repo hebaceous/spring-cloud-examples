@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/orders")
+@RequestMapping("${path.order}")
 public class OrderController implements InitializingBean {
 
     // mock
