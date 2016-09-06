@@ -94,7 +94,6 @@
         <module>cloud-service-order</module>
         <module>cloud-zuul</module>
         <module>cloud-admin</module>
-        <module>cloud-service-gateway</module>
         <module>cloud-hystrix-dashboard</module>
     </modules>
 
