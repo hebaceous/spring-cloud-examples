@@ -95,6 +95,7 @@
         <module>cloud-zuul</module>
         <module>cloud-admin</module>
         <module>cloud-hystrix-dashboard</module>
+        <module>cloud-turbine</module>
     </modules>
 
 </project>

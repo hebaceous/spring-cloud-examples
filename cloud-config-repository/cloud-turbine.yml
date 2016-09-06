@@ -1,0 +1,7 @@
+server:
+  port: 8988
+
+turbine:
+  app-config: cloud-service-user,cloud-service-order
+  cluster-name-expression: "'default'"
+  combine-host-port: true
