@@ -4,5 +4,5 @@ server:
 zuul:
   ignoredServices: '*'
   routes:
-    cloud-service-user: /users/**
-    cloud-service-order: /orders/**
+    cloud-service-user: /u/**
+    cloud-service-order: /o/**

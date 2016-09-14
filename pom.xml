@@ -96,6 +96,7 @@
         <module>cloud-admin</module>
         <module>cloud-hystrix-dashboard</module>
         <module>cloud-turbine</module>
+        <module>cloud-zipkin</module>
     </modules>
 
 </project>
